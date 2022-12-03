@@ -32,7 +32,7 @@
                 <&kp>,
                 <&kp>;
 
-            hold-trigger-key-positions = <0 1 2 3 4  5 6 7 8 9  15 16 17 18 19  25 26 27 28 29>;// <---[[left-hand keys + thumbs]]
+            //hold-trigger-key-positions = <0 1 2 3 4  5 6 7 8 9  15 16 17 18 19  25 26 27 28 29>;// <---[[left-hand keys + thumbs]]
         };
         hm_r: right_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -44,7 +44,7 @@
                 <&kp>,
                 <&kp>;
 
-            hold-trigger-key-positions = <0 1 2 3 4  5 6 7 8 9  15 16 17 18 19  25 26 27 28 29>;// <---[[right-hand keys + thumbs]]
+            //hold-trigger-key-positions = <0 1 2 3 4  5 6 7 8 9  15 16 17 18 19  25 26 27 28 29>;// <---[[right-hand keys + thumbs]]
         };
     };
 
