@@ -16,13 +16,17 @@
     tapping_term_ms = <200>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+};
+
 / {
     behaviors {
         hm_l: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP_LEFT";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <300>;
             bindings =
                 <&kp>,
@@ -34,7 +38,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP_RIGHT";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <300>;
             bindings =
                 <&kp>,
