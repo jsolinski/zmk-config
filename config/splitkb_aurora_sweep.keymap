@@ -28,7 +28,7 @@
                 <&kp>,
                 <&kp>;
 
-            hold-trigger-key-positions = <32 33>;// <---[[right-hand keys + thumbs]]
+            hold-trigger-key-positions = <0 1 2 3 4  5 6 7 8 9  15 16 17 18 19  25 26 27 28 29>;// <---[[left-hand keys + thumbs]]
         };
         hm_r: right_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -40,7 +40,7 @@
                 <&kp>,
                 <&kp>;
 
-            hold-trigger-key-positions = <32 33>;// <---[[left-hand keys + thumbs]]
+            hold-trigger-key-positions = <0 1 2 3 4  5 6 7 8 9  15 16 17 18 19  25 26 27 28 29>;// <---[[right-hand keys + thumbs]]
         };
     };
 
@@ -93,7 +93,7 @@
             >;
         };
 
-        F_keys {
+        f_keys {
             bindings = <
          &kp F1         &kp F2            &kp F3        &kp F4   &kp F5   &kp F6        &kp F6             &kp F8         &kp F9          &kp F10
  &kp LEFT_SHIFT  &kp RIGHT_ALT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp F11  &kp F12  &kp LEFT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT
