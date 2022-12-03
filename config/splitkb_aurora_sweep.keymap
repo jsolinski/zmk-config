@@ -55,16 +55,6 @@
             bindings = <&caps_word>;
             key-positions = <10 19>;
         };
-
-        ralt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <30 31>;
-        };
-
-        ralt2 {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <32 33>;
-        };
     };
 
     keymap {
@@ -72,10 +62,10 @@
 
         master {
             bindings = <
-              &kp Q   &kp W          &kp F             &kp P            &kp B        &kp J              &kp L          &kp U    &kp Y        &kp SEMICOLON
- &hm_l LEFT_SHIFT A   &kp R  &hm_l LCTRL S  &hm_l LEFT_ALT T            &kp G        &kp M  &hm_r RIGHT_ALT N  &hm_r RCTRL E    &kp I  &hm_r RIGHT_SHIFT O
-              &kp Z   &kp X          &kp C      &hm_l LGUI D            &kp V        &kp K       &hm_r RGUI H      &kp COMMA  &kp DOT         &kp QUESTION
-                                                 &lt 1 ENTER  &lt 3 BACKSPACE  &lt 3 SPACE       &lt 1 DELETE
+              &kp Q         &kp W          &kp F             &kp P            &kp B        &kp J              &kp L          &kp U         &kp Y        &kp SEMICOLON
+ &hm_l LEFT_SHIFT A  &hm_l RALT R  &hm_l LCTRL S  &hm_l LEFT_ALT T            &kp G        &kp M  &hm_r RIGHT_ALT N  &hm_r RCTRL E  &hm_r RALT I  &hm_r RIGHT_SHIFT O
+              &kp Z         &kp X          &kp C      &hm_l LGUI D            &kp V        &kp K       &hm_r RGUI H      &kp COMMA       &kp DOT            &kp SLASH
+                                                       &lt 1 ENTER  &lt 3 BACKSPACE  &lt 3 SPACE       &lt 1 DELETE
             >;
         };
 
@@ -84,7 +74,7 @@
  &kp EXCLAMATION        &kp AT      &kp HASH    &kp DOLLAR        &kp PRCNT         &kp CARET           &kp AMPS     &kp ASTRK      &kp PIPE      &kp UNDER
     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
        &kp ASTRK     &kp SLASH      &kp PLUS     &kp MINUS        &kp EQUAL  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &kp COMMA       &kp DOT  &kp BACKSLASH
-                                               &lt 1 ENTER  &lt 2 BACKSPACE         &lt 2 DEL        &lt 1 SPACE
+                                               &lt 4 ENTER  &lt 2 BACKSPACE         &lt 2 DEL        &lt 4 SPACE
             >;
         };
 
@@ -102,7 +92,7 @@
          &kp F1         &kp F2            &kp F3        &kp F4   &kp F5   &kp F6        &kp F6             &kp F8         &kp F9          &kp F10
  &kp LEFT_SHIFT  &kp RIGHT_ALT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp F11  &kp F12  &kp LEFT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT
           &none          &none             &none         &none    &none    &none         &none              &none          &none            &none
-                                                         &mo 4    &mo 5    &mo 5         &mo 4
+                                                         &mo 5    &none    &none         &mo 5
             >;
         };
 
