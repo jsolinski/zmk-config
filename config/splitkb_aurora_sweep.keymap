@@ -68,10 +68,10 @@
 
         master {
             bindings = <
-              &kp Q   &kp W          &kp F             &kp P            &kp B      &kp J              &kp L          &kp U    &kp Y        &kp SEMICOLON
- &hm_l LEFT_SHIFT A   &kp R  &hm_l LCTRL S  &hm_l LEFT_ALT T            &kp G      &kp M  &hm_r RIGHT_ALT N  &hm_r RCTRL E    &kp I  &hm_r RIGHT_SHIFT O
-              &kp Z   &kp X          &kp C      &hm_l LGUI D            &kp V      &kp K       &hm_r RGUI H      &kp COMMA  &kp DOT         &kp QUESTION
-                                                 &lt 1 ENTER  &lt 3 BACKSPACE  &lt 3 DEL        &lt 1 SPACE
+              &kp Q   &kp W          &kp F             &kp P            &kp B        &kp J              &kp L          &kp U    &kp Y        &kp SEMICOLON
+ &hm_l LEFT_SHIFT A   &kp R  &hm_l LCTRL S  &hm_l LEFT_ALT T            &kp G        &kp M  &hm_r RIGHT_ALT N  &hm_r RCTRL E    &kp I  &hm_r RIGHT_SHIFT O
+              &kp Z   &kp X          &kp C      &hm_l LGUI D            &kp V        &kp K       &hm_r RGUI H      &kp COMMA  &kp DOT         &kp QUESTION
+                                                 &lt 1 ENTER  &lt 3 BACKSPACE  &lt 3 SPACE       &lt 1 DELETE
             >;
         };
 
