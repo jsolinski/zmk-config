@@ -11,6 +11,17 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 
+
+enum preonic_layers {
+    MASTER,
+    SYM_1,
+    SYM_2,
+    F_KEYS,
+    MEDIA 
+    KB_FUNK,
+};
+
+
 &lt {
     flavor = "balanced";
     tapping_term_ms = <200>;
