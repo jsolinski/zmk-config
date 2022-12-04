@@ -12,14 +12,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-enum preonic_layers {
-    MASTER,
-    SYM_1,
-    SYM_2,
-    F_KEYS,
-    MEDIA,
-    KB_FUNK
-};
+
+#define     MASTER  0
+#define     SYM_1   1
+#define     SYM_2   2
+#define     F_KEYS  3
+#define     MEDIA   4
+#define     KB_FUNK 5
+
 
 
 &lt {
