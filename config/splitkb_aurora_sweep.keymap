@@ -62,7 +62,7 @@
  &kp EXCLAMATION        &kp AT      &kp HASH    &kp DOLLAR        &kp PRCNT         &kp CARET           &kp AMPS     &kp ASTRK      &kp PIPE      &kp UNDER
     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
        &kp ASTRK     &kp SLASH      &kp PLUS     &kp MINUS        &kp EQUAL  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &kp COMMA       &kp DOT  &kp BACKSLASH
-                                               &lt 4 ENTER  &lt 2 BACKSPACE       &lt 2 SPACE          &lt 5 DEL
+                                               &lt 4 ENTER  &lt 2 BACKSPACE       &lt 2 SPACE          &lt 6 DEL
             >;
         };
 
@@ -86,10 +86,10 @@
 
         media {
             bindings = <
-  &none       &none        &kp K_NEXT  &kp K_VOL_UP   &none   &none        &none   &none   &none   &none
-  &none  &kp K_STOP  &kp K_PLAY_PAUSE    &kp K_MUTE   &none   &none        &none   &none   &none   &none
-  &none       &none    &kp K_PREVIOUS  &kp K_VOL_DN   &none   &none        &none   &none   &none   &none
-                                              &none   &none   &none  &bootloader
+  &none       &none        &kp K_NEXT  &kp K_VOL_UP   &none   &none   &none   &none   &none   &none
+  &none  &kp K_STOP  &kp K_PLAY_PAUSE    &kp K_MUTE   &none   &none   &none   &none   &none   &none
+  &none       &none    &kp K_PREVIOUS  &kp K_VOL_DN   &none   &none   &none   &none   &none   &none
+                                              &none   &none   &none   &none
             >;
         };
 
@@ -99,6 +99,15 @@
  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bl BL_TOG    &bl BL_SET 0  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
  &out OUT_BLE  &out OUT_TOG  &out OUT_USB  &bt BT_SEL 4  &bl BL_CYCLE  &bl BL_SET 100  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
                                                   &none         &none           &none            &none
+            >;
+        };
+
+        kb_func_2 {
+            bindings = <
+  &none   &none   &none  &bl BL_ON    &bl BL_TOG      &bl BL_INC  &bl BL_DEC   &none   &none   &none
+  &none   &none   &none      &none    &bl BL_OFF    &bl BL_SET 0       &none   &none   &none   &none
+  &none   &none   &none      &none  &bl BL_CYCLE  &bl BL_SET 100       &none   &none   &none   &none
+                             &none         &none           &none       &none
             >;
         };
     };
