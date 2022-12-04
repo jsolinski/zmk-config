@@ -17,8 +17,8 @@ enum preonic_layers {
     SYM_1,
     SYM_2,
     F_KEYS,
-    MEDIA 
-    KB_FUNK,
+    MEDIA,
+    KB_FUNK
 };
 
 
