@@ -59,7 +59,7 @@
              &kp Q        &kp W         &kp F            &kp P            &kp B        &kp J             &kp L         &kp U        &kp Y       &kp SEMICOLON
  &gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LEFT_ALT T            &kp G        &kp M  &gqt RIGHT_ALT N  &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
              &kp Z        &kp X         &kp C      &gqt LGUI D            &kp V        &kp K       &gqt RGUI H     &kp COMMA      &kp DOT           &kp SLASH
-                                                   &lt 1 ENTER  &lt 3 BACKSPACE  &lt 3 SPACE      &lt 1 DELETE
+                                                   &lt 3 ENTER  &lt 1 BACKSPACE  &lt 1 SPACE      &lt 3 DELETE
             >;
         };
 
