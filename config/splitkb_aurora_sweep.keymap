@@ -75,8 +75,8 @@
 
         symbols_2 {
             bindings = <
-   &kp TAB  &kp RBRC  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS         &kp GT  &kp INSERT  &kp HOME  &kp PG_UP  &kp PG_DN          &kp END
-   &kp ESC  &kp LBRC   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS         &kp LT    &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT       &kp ESCAPE
+ &kp TILDE  &kp RBRC  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS         &kp GT  &kp INSERT  &kp HOME  &kp PG_UP  &kp PG_DN          &kp END
+   &kp ESC  &kp LBRC   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS         &kp LT    &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT          &kp TAB
  &kp LSHFT  &kp LALT          &kp LCTRL               &kp LGUI          &none       &none  &kp RGUI  &kp RCTRL   &kp LALT  &kp RIGHT_SHIFT
                                                      &kp ENTER  &kp BACKSPACE   &kp SPACE   &kp DEL
             >;
