@@ -23,9 +23,7 @@
     quick-tap-ms = <150>;
 };
 
-&kp {
-    quick-tap-ms = <0>;
-};
+
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
@@ -41,6 +39,10 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+        
+        &kp {
+            quick-tap-ms = <0>;
         };
     };
 
