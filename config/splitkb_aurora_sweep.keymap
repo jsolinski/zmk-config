@@ -12,7 +12,7 @@
 
 #define     MASTER_1     0
 #define     MASTER_2     1
-#define     SYM_1        2   
+#define     SYM_1        2
 #define     SYM_2        3
 #define     F_KEYS       4
 #define     MEDIA        5
@@ -50,6 +50,16 @@
             bindings = <&caps_word>;
             key-positions = <10 19>;
         };
+
+        new_combo {
+            bindings = <&tog 0>;
+            key-positions = <4 5>;
+        };
+
+        qwerty {
+            bindings = <&tog 1>;
+            key-positions = <14 15>;
+        };
     };
 
     keymap {
@@ -57,64 +67,64 @@
 
         master_1 {
             bindings = <
-             &kp Q        &kp W         &kp F            &kp P            &kp B        &kp J             &kp L         &kp U        &kp Y       &kp SEMICOLON
- &gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LEFT_ALT T            &kp G        &kp M  &gqt RIGHT_ALT N  &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
-             &kp Z        &kp X         &kp C      &gqt LGUI D            &kp V        &kp K       &gqt RGUI H     &kp COMMA      &kp DOT           &kp SLASH
-                                                   &lt 3 ENTER  &lt 1 BACKSPACE  &lt 1 SPACE      &lt 3 DELETE
+            &kp Q        &kp W         &kp F            &kp P            &kp B        &kp J             &kp L         &kp U        &kp Y       &kp SEMICOLON
+&gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LEFT_ALT T            &kp G        &kp M  &gqt RIGHT_ALT N  &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
+            &kp Z        &kp X         &kp C      &gqt LGUI D            &kp V        &kp K       &gqt RGUI H     &kp COMMA      &kp DOT           &kp SLASH
+                                                  &lt 3 ENTER  &lt 1 BACKSPACE  &lt 1 SPACE      &lt 3 DELETE
             >;
         };
-        
+
         master_2 {
             bindings = <
-             &kp Q        &kp W         &kp F            &kp P            &kp B        &kp J             &kp L         &kp U        &kp Y       &kp SEMICOLON
- &gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LEFT_ALT T            &kp G        &kp M  &gqt RIGHT_ALT N  &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
-             &kp Z        &kp X         &kp C      &gqt LGUI D            &kp V        &kp K       &gqt RGUI H     &kp COMMA      &kp DOT           &kp SLASH
-                                                   &lt 3 ENTER  &lt 1 BACKSPACE  &lt 1 SPACE      &lt 3 DELETE
+            &kp Q        &kp W         &kp E            &kp R            &kp T        &kp Y             &kp U         &kp I        &kp Y               &kp SEMICOLON
+&gqt LEFT_SHIFT A  &gqt RALT S  &gqt LCTRL D  &gqt LEFT_ALT F            &kp G        &kp H  &gqt RIGHT_ALT J  &gqt RCTRL K  &gqt RALT L  &gqt RIGHT_SHIFT SEMICOLON
+            &kp Z        &kp X         &kp C      &gqt LGUI V            &kp B        &kp N       &gqt RGUI H     &kp COMMA      &kp DOT                   &kp SLASH
+                                                  &lt 3 ENTER  &lt 1 BACKSPACE  &lt 1 SPACE      &lt 3 DELETE
             >;
         };
 
         symbols_1 {
             bindings = <
- &kp EXCLAMATION        &kp AT      &kp HASH    &kp DOLLAR        &kp PRCNT         &kp CARET           &kp AMPS     &kp ASTRK      &kp PIPE      &kp UNDER
-    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
-       &kp ASTRK     &kp SLASH      &kp PLUS     &kp MINUS        &kp EQUAL  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &kp COMMA       &kp DOT  &kp BACKSLASH
-                                               &lt 4 ENTER  &lt 2 BACKSPACE       &lt 2 SPACE          &lt 5 DEL
+&kp EXCLAMATION        &kp AT      &kp HASH    &kp DOLLAR        &kp PRCNT         &kp CARET           &kp AMPS     &kp ASTRK      &kp PIPE      &kp UNDER
+   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
+      &kp ASTRK     &kp SLASH      &kp PLUS     &kp MINUS        &kp EQUAL  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &kp COMMA       &kp DOT  &kp BACKSLASH
+                                              &lt 4 ENTER  &lt 2 BACKSPACE       &lt 2 SPACE          &lt 5 DEL
             >;
         };
 
         symbols_2 {
             bindings = <
- &kp TILDE  &kp RBRC  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS         &kp GT  &kp INSERT  &kp HOME  &kp PG_UP  &kp PG_DN          &kp END
-   &kp ESC  &kp LBRC   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS         &kp LT    &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT          &kp TAB
- &kp LSHFT  &kp LALT          &kp LCTRL               &kp LGUI          &none       &none  &kp RGUI  &kp RCTRL   &kp LALT  &kp RIGHT_SHIFT
-                                                     &kp ENTER  &kp BACKSPACE   &kp SPACE   &kp DEL
+&kp TILDE  &kp RBRC  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS         &kp GT  &kp INSERT  &kp HOME  &kp PG_UP  &kp PG_DN          &kp END
+  &kp ESC  &kp LBRC   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS         &kp LT    &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT          &kp TAB
+&kp LSHFT  &kp LALT          &kp LCTRL               &kp LGUI          &none       &none  &kp RGUI  &kp RCTRL   &kp LALT  &kp RIGHT_SHIFT
+                                                    &kp ENTER  &kp BACKSPACE   &kp SPACE   &kp DEL
             >;
         };
 
         f_keys {
             bindings = <
-         &kp F1         &kp F2            &kp F3        &kp F4   &kp F5   &kp F6        &kp F6             &kp F8         &kp F9          &kp F10
- &kp LEFT_SHIFT  &kp RIGHT_ALT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp F11  &kp F12  &kp LEFT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT
-          &none          &none             &none         &none    &none    &none         &none              &none          &none            &none
-                                                         &none    &none    &none         &none
+        &kp F1         &kp F2            &kp F3        &kp F4   &kp F5   &kp F6        &kp F6             &kp F8         &kp F9          &kp F10
+&kp LEFT_SHIFT  &kp RIGHT_ALT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp F11  &kp F12  &kp LEFT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT
+         &none          &none             &none         &none    &none    &none         &none              &none          &none            &none
+                                                        &none    &none    &none         &none
             >;
         };
 
         media {
             bindings = <
- &kp PRINTSCREEN       &none        &kp K_NEXT  &kp K_VOL_UP   &none   &none   &none   &none   &none   &none
-           &none  &kp K_STOP  &kp K_PLAY_PAUSE    &kp K_MUTE   &none   &none   &none   &none   &none   &none
-           &none       &none    &kp K_PREVIOUS  &kp K_VOL_DN   &none   &none   &none   &none   &none   &none
-                                                       &none   &none   &none   &none
+&kp PRINTSCREEN       &none        &kp K_NEXT  &kp K_VOL_UP  &none  &none  &none  &none  &none  &none
+          &none  &kp K_STOP  &kp K_PLAY_PAUSE    &kp K_MUTE  &none  &none  &none  &none  &none  &none
+          &none       &none    &kp K_PREVIOUS  &kp K_VOL_DN  &none  &none  &none  &none  &none  &none
+                                                      &none  &none  &none  &none
             >;
         };
 
         kb_func {
             bindings = <
-   &bt BT_PRV    &bt BT_CLR    &bt BT_NXT     &bl BL_ON   &none   &none   &none   &none   &none   &none
- &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &none   &none   &none   &none   &none   &none
- &out OUT_BLE  &out OUT_TOG  &out OUT_USB  &bt BT_SEL 4   &none   &none   &none   &none   &none   &none
-                                                  &none   &none   &none   &none
+  &bt BT_PRV    &bt BT_CLR    &bt BT_NXT     &bl BL_ON  &none  &none  &none  &none  &none  &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none  &none  &none  &none  &none  &none
+&out OUT_BLE  &out OUT_TOG  &out OUT_USB  &bt BT_SEL 4  &none  &none  &none  &none  &none  &none
+                                                 &none  &none  &none  &none
             >;
         };
     };
