@@ -54,11 +54,13 @@
         new_combo {
             bindings = <&tog 0>;
             key-positions = <4 5>;
+            layers = <0>;
         };
 
         qwerty {
             bindings = <&tog 1>;
-            key-positions = <14 15>;
+            key-positions = <5 4>;
+            layers = <1>;
         };
     };
 
