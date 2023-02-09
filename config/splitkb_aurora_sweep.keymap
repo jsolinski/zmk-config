@@ -54,13 +54,13 @@
 
         colmak {
             bindings = <&tog 0>;
-            key-positions = <14 15>;
+            key-positions = <5 4>;
             layers = <1>;
         };
 
         qwerty {
             bindings = <&tog 1>;
-            key-positions = <14 15>;
+            key-positions = <15 14>;
             layers = <0>;
         };
     };
