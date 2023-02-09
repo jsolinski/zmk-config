@@ -10,12 +10,13 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define     MASTER  0
-#define     SYM_1   1
-#define     SYM_2   2
-#define     F_KEYS  3
-#define     MEDIA   4
-#define     KB_FUNK 5
+#define     MASTER_1     0
+#define     MASTER_2     1
+#define     SYM_1        2   
+#define     SYM_2        3
+#define     F_KEYS       4
+#define     MEDIA        5
+#define     KB_FUNK      6
 
 &lt {
     flavor = "balanced";
@@ -54,7 +55,16 @@
     keymap {
         compatible = "zmk,keymap";
 
-        master {
+        master_1 {
+            bindings = <
+             &kp Q        &kp W         &kp F            &kp P            &kp B        &kp J             &kp L         &kp U        &kp Y       &kp SEMICOLON
+ &gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LEFT_ALT T            &kp G        &kp M  &gqt RIGHT_ALT N  &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
+             &kp Z        &kp X         &kp C      &gqt LGUI D            &kp V        &kp K       &gqt RGUI H     &kp COMMA      &kp DOT           &kp SLASH
+                                                   &lt 3 ENTER  &lt 1 BACKSPACE  &lt 1 SPACE      &lt 3 DELETE
+            >;
+        };
+        
+        master_2 {
             bindings = <
              &kp Q        &kp W         &kp F            &kp P            &kp B        &kp J             &kp L         &kp U        &kp Y       &kp SEMICOLON
  &gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LEFT_ALT T            &kp G        &kp M  &gqt RIGHT_ALT N  &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
