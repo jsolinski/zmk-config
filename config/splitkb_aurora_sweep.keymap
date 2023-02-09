@@ -49,16 +49,17 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <10 19>;
+            layers = <0 1>;
         };
 
         new_combo {
-            bindings = <&tog 0>;
+            bindings = <&tog 1>;
             key-positions = <4 5>;
             layers = <0>;
         };
 
         qwerty {
-            bindings = <&tog 1>;
+            bindings = <&tog 0>;
             key-positions = <5 4>;
             layers = <1>;
         };
