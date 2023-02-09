@@ -51,20 +51,6 @@
             key-positions = <10 19>;
             layers = <0 1>;
         };
-
-        colmak {
-            bindings = <&tog 0>;
-            key-positions = <4 5>;
-            layers = <1>;
-            timeout-ms = <50>;
-        };
-
-        qwerty {
-            bindings = <&tog 1>;
-            key-positions = <4 5>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
     };
 
     keymap {
