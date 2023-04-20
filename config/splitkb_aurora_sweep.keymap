@@ -70,37 +70,37 @@
 
         master_1 {
             bindings = <
-            &kp Q        &kp W         &kp F            &kp P            &kp B        &kp J             &kp L         &kp U        &kp Y       &kp SEMICOLON
+            &kp Q        &kp W         &kp F            &kp P            &kp B        &kp J            &kp L         &kp U        &kp Y       &kp SEMICOLON
 &gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LEFT_ALT T            &kp G        &kp M  &gqt LEFT_ALT N  &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
-            &kp Z        &kp X         &kp C      &gqt LGUI D            &kp V        &kp K       &gqt RGUI H     &kp COMMA      &kp DOT           &kp SLASH
-                                                  &lt 4 ENTER  &lt 2 BACKSPACE  &lt 2 SPACE      &lt 4 DELETE
+            &kp Z        &kp X         &kp C      &gqt LGUI D            &kp V        &kp K      &gqt RGUI H     &kp COMMA      &kp DOT           &kp SLASH
+                                                  &lt 4 ENTER  &lt 2 BACKSPACE  &lt 2 SPACE     &lt 4 DELETE
             >;
         };
 
         master_2 {
             bindings = <
-            &kp Q        &kp W         &kp E            &kp R            &kp T        &kp Y             &kp U         &kp I        &kp O                       &kp P
+            &kp Q        &kp W         &kp E            &kp R            &kp T        &kp Y            &kp U         &kp I        &kp O                       &kp P
 &gqt LEFT_SHIFT A  &gqt RALT S  &gqt LCTRL D  &gqt LEFT_ALT F            &kp G        &kp H  &gqt LEFT_ALT J  &gqt RCTRL K  &gqt RALT L  &gqt RIGHT_SHIFT SEMICOLON
-            &kp Z        &kp X         &kp C      &gqt LGUI V            &kp B        &kp N       &gqt RGUI M     &kp COMMA      &kp DOT                   &kp SLASH
-                                                  &lt 4 ENTER  &lt 2 BACKSPACE  &lt 2 SPACE      &lt 4 DELETE
+            &kp Z        &kp X         &kp C      &gqt LGUI V            &kp B        &kp N      &gqt RGUI M     &kp COMMA      &kp DOT                   &kp SLASH
+                                                  &lt 4 ENTER  &lt 2 BACKSPACE  &lt 2 SPACE     &lt 4 DELETE
             >;
         };
 
         symbols_1 {
             bindings = <
-&kp EXCLAMATION        &kp AT      &kp HASH    &kp DOLLAR        &kp PRCNT         &kp CARET           &kp AMPS     &kp ASTRK      &kp PIPE      &kp UNDER
-   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
-      &kp ASTRK     &kp SLASH      &kp PLUS     &kp MINUS        &kp EQUAL  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &kp COMMA       &kp DOT  &kp BACKSLASH
-                                              &lt 5 ENTER  &lt 3 BACKSPACE       &lt 3 SPACE          &lt 6 DEL
+&kp EXCLAMATION        &kp AT      &kp HASH       &kp DOLLAR        &kp PRCNT         &kp CARET                 &kp AMPS     &kp ASTRK      &kp PIPE      &kp UNDER
+   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4     &kp NUMBER_5      &kp NUMBER_6             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
+      &kp ASTRK     &kp SLASH      &kp PLUS  &gqt LGUI MINUS        &kp EQUAL  &kp SINGLE_QUOTE  &gqt RGUI DOUBLE_QUOTES     &kp COMMA       &kp DOT  &kp BACKSLASH
+                                                 &lt 5 ENTER  &lt 3 BACKSPACE       &lt 3 SPACE                &lt 6 DEL
             >;
         };
 
         symbols_2 {
             bindings = <
-&kp TILDE  &kp RBRC  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS         &kp GT  &kp INSERT  &kp HOME  &kp PG_UP  &kp PG_DN          &kp END
-  &kp ESC  &kp LBRC   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS         &kp LT    &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT          &kp TAB
-&kp LSHFT  &kp LALT          &kp LCTRL               &kp LGUI          &none       &none  &kp RGUI  &kp RCTRL   &kp LALT  &kp RIGHT_SHIFT
-                                                    &kp ENTER  &kp BACKSPACE   &kp SPACE   &kp DEL
+&kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                &kp LT                 &kp GT   &kp HOME  &kp PG_DN  &kp PG_UP    &kp END          &kp INS
+  &kp ESC          &kp LBRC           &kp RBRC  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT          &kp TAB
+&kp LSHFT          &kp LALT          &kp LCTRL              &kp LGUI                  &none      &none   &kp RGUI  &kp RCTRL   &kp LALT  &kp RIGHT_SHIFT
+                                                           &kp ENTER          &kp BACKSPACE  &kp SPACE    &kp DEL
             >;
         };
 
