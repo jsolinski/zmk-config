@@ -63,6 +63,16 @@
             key-positions = <4 5>;
             layers = <0>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <10 11>;
+        };
+
+        new_combo {
+            bindings = <&kp TAB>;
+            key-positions = <18 19>;
+        };
     };
 
     keymap {
