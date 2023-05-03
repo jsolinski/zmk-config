@@ -117,10 +117,10 @@
 
         f_keys {
             bindings = <
-    &none          &none      &none     &none    &none    &none     &none      &none     &none      &none
-   &kp F1         &kp F2     &kp F3    &kp F4   &kp F5   &kp F6    &kp F7     &kp F8    &kp F9    &kp F10
-&kp LSHFT  &kp RIGHT_ALT  &kp LCTRL  &kp LALT  &kp F11  &kp F12  &kp LALT  &kp RCTRL  &kp RALT  &kp RSHFT
-                                        &none    &none    &none     &none
+   &kp F1    &kp F2     &kp F3        &kp F4         &kp F5         &kp F6        &kp F7     &kp F8  &kp NUMBER_9    &kp F10
+&kp LSHFT  &kp RALT  &kp LCTRL  &kp LG(LGUI)  &gqt F11 LALT  &gqt F12 LALT  &kp LG(RGUI)  &kp RCTRL      &kp RALT  &kp RSHFT
+ &kp LEFT    &kp UP   &kp DOWN     &kp RIGHT          &none          &none      &kp LEFT   &kp DOWN        &kp UP  &kp RIGHT
+                                       &none          &none          &none         &none
             >;
         };
 
