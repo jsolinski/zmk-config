@@ -99,10 +99,10 @@
 
         symbols_1 {
             bindings = <
-&kp EXCLAMATION     &kp AT               &kp HASH         &kp PIPE           &kp BSLH         &kp FSLH              &kp N7                     &kp N8  &kp N9     &kp MINUS
-     &kp DOLLAR  &kp PRCNT  &gqt LEFT_SHIFT CARET  &gqt LGUI UNDER  &kp DOUBLE_QUOTES        &kp ASTRK  &gqt RGUI NUMBER_4  &gqt RIGHT_SHIFT NUMBER_5  &kp N6      &kp PLUS
-       &kp AMPS   &kp STAR               &kp PLUS        &kp MINUS   &kp SINGLE_QUOTE        &kp EQUAL        &kp NUMBER_1                     &kp N2  &kp N3  &kp NUMBER_0
-                                                       &lt 5 ENTER        &lt 3 SPACE  &lt 3 BACKSPACE           &lt 6 DEL
+  &kp EXCLAMATION             &kp AT          &kp HASH         &kp PIPE                 &kp BSLH         &kp FSLH              &kp N7               &kp N8              &kp N9        &kp MINUS
+&gqt LSHFT DOLLAR  &gqt RALT PERCENT  &gqt LCTRL CARET  &gqt LGUI UNDER  &gqt LALT DOUBLE_QUOTES  &gqt LALT ASTRK  &gqt RGUI NUMBER_4  &gqt RCTRL NUMBER_5  &gqt RALT NUMBER_6  &gqt RSHFT PLUS
+         &kp AMPS           &kp STAR          &kp PLUS        &kp MINUS         &kp SINGLE_QUOTE        &kp EQUAL        &kp NUMBER_1               &kp N2              &kp N3     &kp NUMBER_0
+                                                            &lt 5 ENTER              &lt 3 SPACE  &lt 3 BACKSPACE           &lt 6 DEL
             >;
         };
 
