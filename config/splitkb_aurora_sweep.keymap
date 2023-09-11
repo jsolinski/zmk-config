@@ -81,64 +81,64 @@
 
         master_1 {
             bindings = <
-            &kp Q        &kp W         &kp F        &kp P            &kp B        &kp J         &kp L         &kp U        &kp Y       &kp SEMICOLON
-&gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LGUI T      &gqt LALT G  &gqt LALT M   &gqt RGUI N  &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
-            &kp Z        &kp X         &kp C        &kp D            &kp V        &kp K         &kp H     &kp COMMA      &kp DOT           &kp SLASH
+&kp Q              &kp W        &kp F         &kp P        &kp B            &kp J        &kp L         &kp U         &kp Y        &kp SEMICOLON
+&gqt LEFT_SHIFT A  &gqt RALT R  &gqt LCTRL S  &gqt LGUI T  &gqt LALT G      &gqt LALT M  &gqt RGUI N   &gqt RCTRL E  &gqt RALT I  &gqt RIGHT_SHIFT O
+&kp Z              &kp X        &kp C         &kp D        &kp V            &kp K        &kp H         &kp COMMA     &kp DOT      &kp SLASH
                                               &lt 4 ENTER  &lt 2 BACKSPACE  &lt 2 SPACE  &lt 4 DELETE
             >;
         };
 
         master_2 {
             bindings = <
-            &kp Q        &kp W         &kp E        &kp R            &kp T        &kp Y         &kp U         &kp I        &kp O                       &kp P
-&gqt LEFT_SHIFT A  &gqt RALT S  &gqt LCTRL D  &gqt LGUI F      &gqt LALT G  &gqt LALT H   &gqt RGUI J  &gqt RCTRL K  &gqt RALT L  &gqt RIGHT_SHIFT SEMICOLON
-            &kp Z        &kp X         &kp C        &kp V            &kp B        &kp N         &kp M     &kp COMMA      &kp DOT                   &kp SLASH
+&kp Q              &kp W        &kp E         &kp R        &kp T            &kp Y        &kp U         &kp I         &kp O        &kp P
+&gqt LEFT_SHIFT A  &gqt RALT S  &gqt LCTRL D  &gqt LGUI F  &gqt LALT G      &gqt LALT H  &gqt RGUI J   &gqt RCTRL K  &gqt RALT L  &gqt RIGHT_SHIFT SEMICOLON
+&kp Z              &kp X        &kp C         &kp V        &kp B            &kp N        &kp M         &kp COMMA     &kp DOT      &kp SLASH
                                               &lt 4 ENTER  &lt 2 BACKSPACE  &lt 2 SPACE  &lt 4 DELETE
             >;
         };
 
         symbols_1 {
             bindings = <
-  &kp EXCLAMATION             &kp AT          &kp HASH         &kp PIPE                 &kp BSLH         &kp FSLH              &kp N7               &kp N8              &kp N9        &kp MINUS
+&kp EXCLAMATION    &kp AT             &kp HASH          &kp PIPE         &kp BSLH                 &kp FSLH         &kp N7              &kp N8               &kp N9              &kp MINUS
 &gqt LSHFT DOLLAR  &gqt RALT PERCENT  &gqt LCTRL CARET  &gqt LGUI UNDER  &gqt LALT DOUBLE_QUOTES  &gqt LALT ASTRK  &gqt RGUI NUMBER_4  &gqt RCTRL NUMBER_5  &gqt RALT NUMBER_6  &gqt RSHFT PLUS
-         &kp AMPS           &kp STAR          &kp PLUS        &kp MINUS         &kp SINGLE_QUOTE        &kp EQUAL        &kp NUMBER_1               &kp N2              &kp N3     &kp NUMBER_0
-                                                            &lt 5 ENTER          &lt 3 BACKSPACE      &lt 3 SPACE           &lt 6 DEL
+&kp AMPS           &kp STAR           &kp PLUS          &kp MINUS        &kp SINGLE_QUOTE         &kp EQUAL        &kp NUMBER_1        &kp N2               &kp N3              &kp NUMBER_0
+                                                        &lt 5 ENTER      &lt 3 BACKSPACE          &lt 3 SPACE      &lt 6 DEL
             >;
         };
 
         symbols_2 {
             bindings = <
-&kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                &kp LT                 &kp GT   &kp HOME  &kp PG_DN  &kp PG_UP    &kp END          &kp INS
-  &kp ESC          &kp LBRC           &kp RBRC  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT          &kp TAB
-&kp LSHFT          &kp LALT          &kp LCTRL              &kp LGUI                  &none      &none   &kp RGUI  &kp RCTRL   &kp LALT  &kp RIGHT_SHIFT
-                                                           &kp ENTER          &kp BACKSPACE  &kp SPACE    &kp DEL
+&kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LT                &kp GT                 &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS
+&kp ESC    &kp LBRC          &kp RBRC           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp TAB
+&kp LSHFT  &kp LALT          &kp LCTRL          &kp LGUI              &none                  &none      &kp RGUI   &kp RCTRL  &kp LALT   &kp RIGHT_SHIFT
+                                                &kp ENTER             &kp BACKSPACE          &kp SPACE  &kp DEL
             >;
         };
 
         f_keys {
             bindings = <
-   &kp F1    &kp F2     &kp F3        &kp F4         &kp F5         &kp F6        &kp F7     &kp F8     &kp F9    &kp F10
-&kp LSHFT  &kp RALT  &kp LCTRL  &kp LG(LGUI)  &gqt F11 LALT  &gqt F12 LALT  &kp LG(RGUI)  &kp RCTRL   &kp RALT  &kp RSHFT
-    &none  &kp LEFT   &kp DOWN        &kp UP      &kp RIGHT       &kp LEFT      &kp DOWN     &kp UP  &kp RIGHT      &none
-                                       &none          &none          &none         &none
+&kp F1     &kp F2    &kp F3     &kp F4    &kp F5         &kp F6         &kp F7    &kp F8     &kp F9     &kp F10
+&kp LSHFT  &kp RALT  &kp LCTRL  &kp LGUI  &gqt F11 LALT  &gqt F12 LALT  &kp RGUI  &kp RCTRL  &kp RALT   &kp RSHFT
+&none      &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT      &kp LEFT       &kp DOWN  &kp UP     &kp RIGHT  &none
+                                &none     &none          &none          &none
             >;
         };
 
         media {
             bindings = <
-&kp PRINTSCREEN       &none        &kp K_NEXT  &kp K_VOL_UP  &none  &none  &none  &none  &none  &none
-          &none  &kp K_STOP  &kp K_PLAY_PAUSE    &kp K_MUTE  &none  &none  &none  &none  &none  &none
-          &none       &none    &kp K_PREVIOUS  &kp K_VOL_DN  &none  &none  &none  &none  &none  &none
-                                                      &none  &none  &none  &none
+&kp PRINTSCREEN  &none       &kp K_NEXT        &kp K_VOL_UP  &none  &none  &none  &none  &none  &none
+&none            &kp K_STOP  &kp K_PLAY_PAUSE  &kp K_MUTE    &none  &none  &none  &none  &none  &none
+&none            &none       &kp K_PREVIOUS    &kp K_VOL_DN  &none  &none  &none  &none  &none  &none
+                                               &none         &none  &none  &none
             >;
         };
 
         kb_func {
             bindings = <
-  &bt BT_PRV    &bt BT_CLR    &bt BT_NXT     &bl BL_ON  &none  &none  &none  &none  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none  &none  &none  &none            &none            &none
-&out OUT_BLE  &out OUT_TOG  &out OUT_USB  &bt BT_SEL 4  &none  &none  &none  &none            &none            &none
-                                                 &none  &none  &none  &none
+&bt BT_PRV    &bt BT_CLR    &bt BT_NXT    &bl BL_ON     &none  &none  &none  &none  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none  &none  &none  &none  &none            &none
+&out OUT_BLE  &out OUT_TOG  &out OUT_USB  &bt BT_SEL 4  &none  &none  &none  &none  &none            &none
+                                          &none         &none  &none  &none
             >;
         };
     };
