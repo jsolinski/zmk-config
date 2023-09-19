@@ -86,7 +86,6 @@
                 , <&macro_release &kp LGUI>
                 , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_tap &kp ESC>
-                , <&macro_param_1to1>, <&bt BT_SEL MACRO_PLACEHOLDER - 1>
                 ;
         };
     };
@@ -150,9 +149,9 @@
 
         kb_func {
             bindings = <
-&none  &none  &none  &none  &none  &none  &out OUT_TOG  &none         &none         &bt BT_CLR
-&none  &none  &none  &none  &none  &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &screen N1
-&none  &none  &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &screen N2
+&none  &none  &none  &none  &none  &none  &out OUT_TOG   &screen N1    &screen N2    &bt BT_CLR
+&none  &none  &none  &none  &none  &none  &bt BT_SEL 4   &none         &none         &none  
+&none  &none  &none  &none  &none  &none  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 0
                      &none  &none  &none  &none
             >;
         };
