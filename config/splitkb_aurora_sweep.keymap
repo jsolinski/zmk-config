@@ -5,11 +5,9 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
 
 #define     MASTER_1     0
 #define     MASTER_2     1
@@ -135,10 +133,10 @@
 
         kb_func {
             bindings = <
-&bt BT_PRV    &bt BT_CLR    &bt BT_NXT    &bl BL_ON     &none  &none  &none  &none  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none  &none  &none  &none  &none            &none
-&out OUT_BLE  &out OUT_TOG  &out OUT_USB  &bt BT_SEL 4  &none  &none  &none  &none  &none            &none
-                                          &none         &none  &none  &none
+&none  &none  &none  &none  &none  &none  &out OUT_TOG  &none         &none         &bt BT_CLR
+&none  &none  &none  &none  &none  &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none
+&none  &none  &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
+                     &none  &none  &none  &none
             >;
         };
     };
