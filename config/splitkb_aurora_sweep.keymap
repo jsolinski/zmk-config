@@ -40,6 +40,22 @@
                 <&kp>,
                 <&kp>;
         };
+    macros {
+        screen: screen {
+            label = "ZM_screen";
+            compatible = "zk,behavior-macro";
+            #binding-cells = <1>;
+            bindings
+                =
+                <&bt BT_SEL 0>
+                , <&macro_press &kp LGUI>
+                , <&macro_tap &kp R>
+                , <&macro_release &kp LGUI>
+                , <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>
+                , <&macro_release &kp ESC>
+                ;
+        };
+    };
     };
 
     combos {
@@ -134,8 +150,8 @@
         kb_func {
             bindings = <
 &none  &none  &none  &none  &none  &none  &out OUT_TOG  &none         &none         &bt BT_CLR
-&none  &none  &none  &none  &none  &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none
-&none  &none  &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
+&none  &none  &none  &none  &none  &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &screen 1
+&none  &none  &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &screen 2
                      &none  &none  &none  &none
             >;
         };
