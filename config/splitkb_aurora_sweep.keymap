@@ -75,7 +75,7 @@
     };
 
     macros {
-        screen1: screen1 {
+        screen: screen {
             label = "ZM_screen";
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>; // Must be 1
@@ -87,21 +87,6 @@
                 , <&macro_param_1to1>
                 , <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_tap &kp ESC>
-                ;
-        };
-        screen2: screen2 {
-            label = "ZM_screen";
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>; // Must be 1
-            bindings
-                = <&bt BT_SEL 1>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LGUI>
-                , <&macro_param_1to1>
-                , <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_tap &kp ESC>
-                , <&bt BT_SEL 2>
                 ;
         };
     };
@@ -165,7 +150,7 @@
 
         kb_func {
             bindings = <
-&none  &none  &none  &none  &none  &none  &out OUT_TOG   &screen1 N1   &screen2 N2    &bt BT_CLR
+&none  &none  &none  &none  &none  &none  &out OUT_TOG   &screen N1   &screen N2    &bt BT_CLR
 &none  &none  &none  &none  &none  &none  &bt BT_SEL 4   &none         &none         &none  
 &none  &none  &none  &none  &none  &none  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 0
                      &none  &none  &none  &none
