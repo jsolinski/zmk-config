@@ -27,7 +27,7 @@
     continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
 
-{
+/ {
     behaviors {
         gqt: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -71,6 +71,22 @@
         new_combo {
             bindings = <&kp TAB>;
             key-positions = <18 19>;
+        };
+    };
+
+    macros {
+        screen: screen {
+            label = "ZM_screen";
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings
+                = <&bt BT_SEL 0>
+                , <&macro_press &kp LGUI>
+                , <&macro_tap &kp R>
+                , <&macro_release &kp LGUI>
+                , <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>
+                , <&macro_release &kp ESC>
+                ;
         };
     };
 
