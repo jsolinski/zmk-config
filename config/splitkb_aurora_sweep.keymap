@@ -80,13 +80,19 @@
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>; // Must be 2
             bindings
-                = <&bt BT_SEL 1>
+                = <&macro_press &lt 4>
+                , <&macro_tap &bt BT_SEL 1>
+                , <&macro_release &lt 4>
                 , <&macro_press &kp LGUI>
                 , <&macro_tap &kp R>
                 , <&macro_release &kp LGUI>
-                , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_param_1to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_tap &kp ESC>
-                , <&macro_param_2to1>, <&bt BT_SEL MACRO_PLACEHOLDER>
+                , <&macro_param_2to1>
+                , <&macro_press &lt 4>
+                , <&macro_tap &bt BT_SEL MACRO_PLACEHOLDER>
+                , <&macro_release &lt 4>
                 ;
         };
     };
