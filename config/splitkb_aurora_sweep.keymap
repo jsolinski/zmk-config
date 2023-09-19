@@ -89,8 +89,8 @@
                 , <&macro_param_1to1>
                 , <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_tap &kp ESC>
-                , <&macro_param_2to1>
                 , <&macro_press &lt 4>
+                , <&macro_param_2to1>
                 , <&macro_tap &bt BT_SEL MACRO_PLACEHOLDER>
                 , <&macro_release &lt 4>
                 ;
