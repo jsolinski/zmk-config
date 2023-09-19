@@ -45,7 +45,7 @@
     macros {
         screen: screen {
             label = "ZM_screen";
-            compatible = "zk,behavior-macro";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
                 =
