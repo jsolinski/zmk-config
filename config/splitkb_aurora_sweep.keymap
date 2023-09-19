@@ -40,6 +40,8 @@
                 <&kp>,
                 <&kp>;
         };
+    };
+
     macros {
         screen: screen {
             label = "ZM_screen";
@@ -55,7 +57,6 @@
                 , <&macro_release &kp ESC>
                 ;
         };
-    };
     };
 
     combos {
