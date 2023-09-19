@@ -42,23 +42,6 @@
         };
     };
 
-    macros {
-        screen: screen {
-            label = "ZM_screen";
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings
-                =
-                <&bt BT_SEL 0>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LGUI>
-                , <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>
-                , <&macro_release &kp ESC>
-                ;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
