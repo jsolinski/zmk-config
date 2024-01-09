@@ -84,6 +84,7 @@
                 , <&macro_press &kp LGUI>
                 , <&macro_tap &kp R>
                 , <&macro_release &kp LGUI>
+                , <&macro_wait_time 250>
                 , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_tap &kp ESC>
                 , <&macro_param_2to2>, <&bt BT_SEL MACRO_PLACEHOLDER>
