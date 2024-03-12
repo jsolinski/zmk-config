@@ -23,9 +23,7 @@
     quick-tap-ms = <200>;
 };
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
-};
+&caps_word { continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>; };
 
 / {
     behaviors {
@@ -36,9 +34,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -64,13 +60,13 @@
         };
 
         esc {
-            bindings = <&kp ESC>;
-            key-positions = <10 11>;
+            bindings = <&kp TAB>;
+            key-positions = <13 12 16 17>;
         };
 
         new_combo {
-            bindings = <&kp TAB>;
-            key-positions = <18 19>;
+            bindings = <&kp ESCAPE>;
+            key-positions = <2 3 6 7>;
         };
     };
 
@@ -79,16 +75,20 @@
             label = "ZM_screen";
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>; // Must be 2
-            bindings
-                = <&bt BT_SEL 1>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 250>
-                , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_tap &kp ESC>
-                , <&macro_param_2to2>, <&bt BT_SEL MACRO_PLACEHOLDER>
-                ;
+            bindings =
+                <&bt BT_SEL 1>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 250>,
+                <&macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&kp ESC &macro_param_2to2 &bt BT_SEL MACRO_PLACEHOLDER>;
         };
     };
 
@@ -115,9 +115,9 @@
 
         symbols_1 {
             bindings = <
-&kp EXCLAMATION    &kp AT             &kp HASH          &kp PIPE         &kp BSLH                 &kp FSLH         &kp N7              &kp N8               &kp N9              &kp MINUS
+&kp EXCLAMATION    &kp AT             &kp HASH          &kp PIPE         &kp BSLH                 &kp FSLH         &kp N7        &kp N8         &kp N9        &kp MINUS
 &gqt LSHFT DOLLAR  &gqt RALT PERCENT  &gqt LCTRL CARET  &gqt LGUI UNDER  &gqt LALT DOUBLE_QUOTES  &gqt LALT ASTRK  &gqt RGUI N4  &gqt RCTRL N5  &gqt RALT N6  &gqt RSHFT PLUS
-&kp AMPS           &kp STAR           &kp PLUS          &kp MINUS        &kp SINGLE_QUOTE         &kp EQUAL        &kp N1        &kp N2               &kp N3              &kp N0
+&kp AMPS           &kp STAR           &kp PLUS          &kp MINUS        &kp SINGLE_QUOTE         &kp EQUAL        &kp N1        &kp N2         &kp N3        &kp N0
                                                         &lt 5 ENTER      &lt 3 BACKSPACE          &lt 3 SPACE      &lt 6 DEL
             >;
         };
@@ -133,10 +133,10 @@
 
         f_keys {
             bindings = <
-&kp F1     &kp F2    &kp F3     &kp F4          &kp F5             &kp F6             &kp F7    &kp F8     &kp F9     &kp F10
-&kp LSHFT  &kp RALT  &kp LCTRL  &kp LGUI        &gqt LEFT_ALT F11  &gqt LEFT_ALT F12  &kp RGUI  &kp RCTRL  &kp RALT   &kp RSHFT
-&kp LEFT   &kp DOWN  &kp UP     &kp RIGHT       &none              &none              &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-                                &none           &none              &none              &none
+&kp F1     &kp F2    &kp F3     &kp F4     &kp F5             &kp F6             &kp F7    &kp F8     &kp F9    &kp F10
+&kp LSHFT  &kp RALT  &kp LCTRL  &kp LGUI   &gqt LEFT_ALT F11  &gqt LEFT_ALT F12  &kp RGUI  &kp RCTRL  &kp RALT  &kp RSHFT
+&kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &none              &none              &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
+                                &none      &none              &none              &none
             >;
         };
 
@@ -151,9 +151,9 @@
 
         kb_func {
             bindings = <
-&none  &none  &none  &none  &none  &none  &screen N1 1   &screen N2 2  &out OUT_TOG  &bt BT_CLR
-&none  &none  &none  &none  &none  &none  &bt BT_SEL 4   &none         &none         &none  
-&none  &none  &none  &none  &none  &none  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 0
+&none  &none  &none  &none  &none  &none  &screen N1 1  &screen N2 2  &out OUT_TOG  &bt BT_CLR
+&none  &none  &none  &none  &none  &none  &bt BT_SEL 4  &none         &none         &none
+&none  &none  &none  &none  &none  &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 0
                      &none  &none  &none  &none
             >;
         };
