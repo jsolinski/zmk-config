@@ -59,14 +59,24 @@
             layers = <0>;
         };
 
-        esc {
+        tab {
             bindings = <&kp TAB>;
-            key-positions = <13 12 16 17>;
+            key-positions = <12 13>;
         };
 
-        new_combo {
+        esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 3 6 7>;
+            key-positions = <2 3>;
+        };
+
+        tab_2 {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
+        };
+
+        esc_2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <6 7>;
         };
     };
 
