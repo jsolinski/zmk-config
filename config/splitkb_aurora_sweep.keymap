@@ -41,9 +41,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "R_ALT_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <155>;
             quick-tap-ms = <0>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
     };
@@ -117,10 +117,10 @@
 
         master_1 {
             bindings = <
-&kp Q        &kp W         &kp F        &kp P              &kp B             &kp J              &ralt_key RA(L) L         &kp U        &kp Y         &kp SEMICOLON
-&ralt_key RA(A) A  &gqt LCTRL R  &ralt_key RA(S) S  &kp T              &gqt LEFT_META G  &gqt RIGHT_META M  &ralt_key RA(N) N         &ralt_key RA(E) E  &gqt RCTRL I  &ralt_key RA(O) O
-&ralt_key RA(Z) Z  &ralt_key RA(X) X   &ralt_key RA(C) C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA    &kp DOT       &kp SLASH
-                                        &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
+&kp Q              &kp W              &kp F              &kp P              &kp B             &kp J              &ralt_key RA(L) L   &kp U              &kp Y         &kp SEMICOLON
+&ralt_key RA(A) A  &gqt LCTRL R       &ralt_key RA(S) S  &kp T              &gqt LEFT_META G  &gqt RIGHT_META M  &ralt_key RA(N) N   &ralt_key RA(E) E  &gqt RCTRL I  &ralt_key RA(O) O
+&ralt_key RA(Z) Z  &ralt_key RA(X) X  &ralt_key RA(C) C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA          &kp DOT       &kp SLASH
+                                                         &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
             >;
         };
 
