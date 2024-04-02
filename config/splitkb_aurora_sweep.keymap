@@ -37,7 +37,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        ralt_key: homerow_mods {
+        ralt_key: r_alt_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
