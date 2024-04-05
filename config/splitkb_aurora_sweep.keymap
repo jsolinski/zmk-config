@@ -110,6 +110,66 @@
                 <&macro_tap>,
                 <&kp ESC &macro_param_2to2 &bt BT_SEL MACRO_PLACEHOLDER>;
         };
+
+        up_rigth: up_rigth {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UP_ARROW &kp RIGHT>;
+            label = "UP_RIGTH";
+        };
+
+        down_rigth: down_rigth {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN_ARROW &kp RIGHT_ARROW>;
+            label = "DOWN_RIGTH";
+        };
+
+        down_left: down_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN_ARROW &kp LEFT_ARROW>;
+            label = "DOWN_LEFT";
+        };
+
+        up_left: up_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UP_ARROW &kp LEFT_ARROW>;
+            label = "UP_LEFT";
+        };
+
+        sd: sd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X>, <&macro_wait_time 66>, <&kp A>;
+
+            label = "SD";
+        };
+
+        hd: hd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&macro_wait_time 66>, <&kp A>;
+
+            label = "HD";
+        };
+
+        esd: esd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X>, <&macro_wait_time 167>, <&kp A>;
+
+            label = "ESD";
+        };
+
+        ehd: ehd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&macro_wait_time 166>, <&kp A>;
+
+            label = "EHD";
+        };
     };
 
     keymap {
@@ -175,6 +235,15 @@
 &none  &none  &none  &none  &none  &none  &bt BT_SEL 4  &none         &none         &none
 &none  &none  &none  &none  &none  &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 0
                      &none  &none  &none  &none
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&kp Z  &up_left    &kp UP_ARROW    &up_rigth    &none  &none  &none  &none  &none  &kp Z
+&kp Z  &kp LEFT    &none           &kp RIGHT    &none  &none  &sd    &kp X  &esd   &kp Z
+&kp Z  &down_left  &kp DOWN_ARROW  &down_rigth  &none  &none  &hd    &kp Y  &ehd   &kp Z
+                                   &kp A        &kp A  &kp A  &kp A
             >;
         };
     };
