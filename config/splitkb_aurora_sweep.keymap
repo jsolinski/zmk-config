@@ -64,7 +64,7 @@
         };
 
         qwerty {
-            bindings = <&to 1>;
+            bindings = <&to 7>;
             key-positions = <4 5>;
             layers = <0>;
         };
@@ -87,12 +87,6 @@
         esc_2 {
             bindings = <&kp ESCAPE>;
             key-positions = <6 7>;
-        };
-
-        back {
-            bindings = <&to 7>;
-            key-positions = <4 5>;
-            layers = <0>;
         };
     };
 
