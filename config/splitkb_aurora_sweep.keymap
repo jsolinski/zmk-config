@@ -72,21 +72,25 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
+            layers = <0 2 3 1 4 5 6>;
         };
 
         tab_2 {
             bindings = <&kp TAB>;
             key-positions = <16 17>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         esc_2 {
             bindings = <&kp ESCAPE>;
             key-positions = <6 7>;
+            layers = <0 1 2 3 4 5 6>;
         };
     };
 
@@ -109,66 +113,6 @@
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&kp ESC &macro_param_2to2 &bt BT_SEL MACRO_PLACEHOLDER>;
-        };
-
-        up_rigth: up_rigth {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mt UP_ARROW UP_ARROW &mt RIGHT_ARROW RIGHT_ARROW>;
-            label = "UP_RIGTH";
-        };
-
-        down_rigth: down_rigth {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mt DOWN_ARROW DOWN_ARROW &mt RIGHT_ARROW RIGHT_ARROW>;
-            label = "DOWN_RIGTH";
-        };
-
-        down_left: down_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mt DOWN_ARROW DOWN_ARROW &mt LEFT_ARROW LEFT_ARROW>;
-            label = "DOWN_LEFT";
-        };
-
-        up_left: up_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mt UP_ARROW UP_ARROW &mt LEFT_ARROW LEFT_ARROW>;
-            label = "UP_LEFT";
-        };
-
-        sd: sd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp X>, <&macro_wait_time 66>, <&kp A>;
-
-            label = "SD";
-        };
-
-        hd: hd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y>, <&macro_wait_time 66>, <&kp A>;
-
-            label = "HD";
-        };
-
-        esd: esd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp X>, <&macro_wait_time 167>, <&kp A>;
-
-            label = "ESD";
-        };
-
-        ehd: ehd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y>, <&macro_wait_time 166>, <&kp A>;
-
-            label = "EHD";
         };
     };
 
@@ -240,10 +184,10 @@
 
         layer_7 {
             bindings = <
-&kp Z  &up_left    &kp UP_ARROW    &up_rigth    &none  &kp ESC  &none  &none  &none  &kp Z
-&kp Z  &kp LEFT    &kp C           &kp RIGHT    &none  &none    &sd    &kp X  &esd   &kp Z
-&kp Z  &down_left  &kp DOWN_ARROW  &down_rigth  &none  &none    &hd    &kp Y  &ehd   &kp Z
-                                   &kp A        &kp A  &kp A    &kp A
+&kp Z  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &none  &kp ESC  &none  &none  &none  &kp Z
+&kp Z  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &kp A    &kp X  &kp A  &none  &kp Z
+&kp Z  &none     &kp C         &none      &none  &kp A    &kp Y  &kp A  &none  &kp Z
+                               &kp A      &kp A  &kp A    &kp A
             >;
         };
     };
