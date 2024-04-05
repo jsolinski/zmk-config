@@ -64,7 +64,7 @@
         };
 
         qwerty {
-            bindings = <&to 7>;
+            bindings = <&to 1>;
             key-positions = <4 5>;
             layers = <0>;
         };
@@ -185,9 +185,9 @@
         layer_7 {
             bindings = <
 &kp Z  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &none  &kp ESC  &none  &none  &none  &kp Z
-&kp Z  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &kp A    &kp X  &kp A  &none  &kp Z
-&kp Z  &none     &kp C         &none      &none  &kp A    &kp Y  &kp A  &none  &kp Z
-                               &kp A      &kp A  &kp A    &kp A
+&kp Z  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &none    &kp X  &kp A  &kp X  &kp Z
+&kp Z  &none     &kp C         &none      &none  &none    &kp Y  &kp A  &kp Y  &kp Z
+                               &none      &kp X  &kp Y    &none
             >;
         };
     };
