@@ -58,7 +58,7 @@
         };
 
         colmak {
-            bindings = <&to 0>;
+            bindings = <&to 7>;
             key-positions = <4 5>;
             layers = <1>;
         };
