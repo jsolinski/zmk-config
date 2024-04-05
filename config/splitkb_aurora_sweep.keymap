@@ -58,9 +58,9 @@
         };
 
         colmak {
-            bindings = <&to 7>;
+            bindings = <&to 0>;
             key-positions = <4 5>;
-            layers = <1>;
+            layers = <1 7>;
         };
 
         qwerty {
@@ -90,9 +90,9 @@
         };
 
         back {
-            bindings = <&to 0>;
+            bindings = <&to 7>;
             key-positions = <4 5>;
-            layers = <7>;
+            layers = <0>;
         };
     };
 
@@ -120,28 +120,28 @@
         up_rigth: up_rigth {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp UP_ARROW &kp RIGHT>;
+            bindings = <&mt UP_ARROW UP_ARROW &mt RIGHT_ARROW RIGHT_ARROW>;
             label = "UP_RIGTH";
         };
 
         down_rigth: down_rigth {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOWN_ARROW &kp RIGHT_ARROW>;
+            bindings = <&mt DOWN_ARROW DOWN_ARROW &mt RIGHT_ARROW RIGHT_ARROW>;
             label = "DOWN_RIGTH";
         };
 
         down_left: down_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOWN_ARROW &kp LEFT_ARROW>;
+            bindings = <&mt DOWN_ARROW DOWN_ARROW &mt LEFT_ARROW LEFT_ARROW>;
             label = "DOWN_LEFT";
         };
 
         up_left: up_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp UP_ARROW &kp LEFT_ARROW>;
+            bindings = <&mt UP_ARROW UP_ARROW &mt LEFT_ARROW LEFT_ARROW>;
             label = "UP_LEFT";
         };
 
@@ -246,10 +246,10 @@
 
         layer_7 {
             bindings = <
-&kp Z  &up_left    &kp UP_ARROW    &up_rigth    &none  &none  &none  &none  &none  &kp Z
-&kp Z  &kp LEFT    &none           &kp RIGHT    &none  &none  &sd    &kp X  &esd   &kp Z
-&kp Z  &down_left  &kp DOWN_ARROW  &down_rigth  &none  &none  &hd    &kp Y  &ehd   &kp Z
-                                   &kp A        &kp A  &kp A  &kp A
+&kp Z  &up_left    &kp UP_ARROW    &up_rigth    &none  &kp ESC  &none  &none  &none  &kp Z
+&kp Z  &kp LEFT    &kp C           &kp RIGHT    &none  &none    &sd    &kp X  &esd   &kp Z
+&kp Z  &down_left  &kp DOWN_ARROW  &down_rigth  &none  &none    &hd    &kp Y  &ehd   &kp Z
+                                   &kp A        &kp A  &kp A    &kp A
             >;
         };
     };
