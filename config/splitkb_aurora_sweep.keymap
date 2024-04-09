@@ -183,7 +183,7 @@
             bindings = <
 &kp Q   &kp W         &kp F   &kp P              &kp B             &kp J              &ara L              &kp U      &kp Y         &as SEMICOLON
 &ara A  &gqt LCTRL R  &ara S  &kp T              &gqt LEFT_META G  &gqt RIGHT_META M  &ara N              &ara E     &gqt RCTRL I  &ara O
-&ara Z  &ara X        &ara C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA  &kp DOT       &as SLASH
+&ara Z  &ara X        &ara C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &as COMMA  &as PERIOD    &as SLASH
                               &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
             >;
         };
@@ -208,10 +208,10 @@
 
         symbols_2 {
             bindings = <
-&kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LT                &kp GT                 &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS
-&kp ESC    &kp LBRC          &kp RBRC           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp TAB
-&kp LSHFT  &kp LALT          &kp LCTRL          &kp LGUI              &none                  &none      &kp RGUI   &kp RCTRL  &kp LALT   &kp RIGHT_SHIFT
-                                                &kp ENTER             &kp BACKSPACE          &kp SPACE  &kp DEL
+&kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT          &kp GT           &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS
+&kp ESC    &as LEFT_BRACKET      &as RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &as TAB
+&kp LSHFT  &kp LALT              &kp LCTRL              &kp LGUI        &none            &none      &kp RGUI   &kp RCTRL  &kp LALT   &kp RIGHT_SHIFT
+                                                        &kp ENTER       &kp BACKSPACE    &kp SPACE  &kp DEL
             >;
         };
 
