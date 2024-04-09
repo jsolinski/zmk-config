@@ -32,7 +32,7 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <(-1)>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -42,8 +42,8 @@
             label = "AUTO_R_ALT";
             #binding-cells = <2>;
             tapping-term-ms = <165>;
-            quick-tap-ms = <(-1)>;
-            flavor = "hold-preferred";
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
@@ -52,8 +52,8 @@
             label = "AUTO_SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <165>;
-            quick-tap-ms = <(-1)>;
-            flavor = "hold-preferred";
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
     };
