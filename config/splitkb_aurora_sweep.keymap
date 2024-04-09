@@ -37,9 +37,19 @@
             bindings = <&kp>, <&kp>;
         };
 
-        ralt_key: r_alt_mods {
+        ra: auto_r_alt {
             compatible = "zmk,behavior-hold-tap";
-            label = "R_ALT_MODS";
+            label = "AUTO_R_ALT";
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <160>;
             quick-tap-ms = <0>;
@@ -121,10 +131,10 @@
 
         master_1 {
             bindings = <
-&kp Q              &kp W              &kp F              &kp P              &kp B             &kp J              &ralt_key RA(L) L   &kp U              &kp Y         &kp SEMICOLON
-&ralt_key RA(A) A  &gqt LCTRL R       &ralt_key RA(S) S  &kp T              &gqt LEFT_META G  &gqt RIGHT_META M  &ralt_key RA(N) N   &ralt_key RA(E) E  &gqt RCTRL I  &ralt_key RA(O) O
-&ralt_key RA(Z) Z  &ralt_key RA(X) X  &ralt_key RA(C) C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA          &kp DOT       &kp SLASH
-                                                         &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
+&kp Q        &kp W         &kp F        &kp P              &kp B             &kp J              &ra RA(L) L         &kp U        &kp Y         &kp SEMICOLON
+&ra RA(A) A  &gqt LCTRL R  &ra RA(S) S  &kp T              &gqt LEFT_META G  &gqt RIGHT_META M  &ra RA(N) N         &ra RA(E) E  &gqt RCTRL I  &ra RA(O) O
+&ra RA(Z) Z  &ra RA(X) X   &ra RA(C) C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA    &kp DOT       &kp SLASH
+                                        &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
             >;
         };
 
@@ -139,10 +149,10 @@
 
         symbols_1 {
             bindings = <
-&kp EXCLAMATION    &kp AT             &kp HASH          &kp PIPE         &kp BSLH                 &kp FSLH         &kp N7        &kp N8         &kp N9        &kp MINUS
-&gqt LSHFT DOLLAR  &gqt RALT PERCENT  &gqt LCTRL CARET  &gqt LGUI UNDER  &gqt LALT DOUBLE_QUOTES  &gqt LALT ASTRK  &gqt RGUI N4  &gqt RCTRL N5  &gqt RALT N6  &gqt RSHFT PLUS
-&kp AMPS           &kp STAR           &kp PLUS          &kp MINUS        &kp SINGLE_QUOTE         &kp EQUAL        &kp N1        &kp N2         &kp N3        &kp N0
-                                                        &lt 5 ENTER      &lt 3 BACKSPACE          &lt 3 SPACE      &lt 6 DEL
+&kp EXCLAMATION  &kp AT       &kp HASH   &kp PIPE     &kp BSLH           &kp FSLH     &kp N7        &kp N8  &kp N9        &kp N0
+&kp DOLLAR       &kp PERCENT  &kp CARET  &kp MINUS    &kp SINGLE_QUOTE   &kp COMMA    &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS
+&kp AMPS         &kp STAR     &kp PLUS   &kp SLASH    &kp DOUBLE_QUOTES  &kp PERIOD   &kp N1        &kp N2  &kp N3        &kp EQUAL
+                                         &lt 5 ENTER  &lt 3 BACKSPACE    &lt 3 SPACE  &lt 6 DEL
             >;
         };
 
