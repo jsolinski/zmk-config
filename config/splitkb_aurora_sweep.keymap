@@ -17,6 +17,8 @@
 #define     MEDIA        5
 #define     KB_FUNK      6
 
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+
 &lt {
     flavor = "tap-preferred";
     quick-tap-ms = <0>;
@@ -131,9 +133,9 @@
 
         master_1 {
             bindings = <
-&kp Q        &kp W         &kp F        &kp P              &kp B             &kp J              &ra RA(L) L         &kp U        &kp Y         &as RS(SEMICOLON) SEMICOLON
+&kp Q        &kp W         &kp F        &kp P              &kp B             &kp J              &ra RA(L) L         &kp U        &kp Y         AS(SEMICOLON)
 &ra RA(A) A  &gqt LCTRL R  &ra RA(S) S  &kp T              &gqt LEFT_META G  &gqt RIGHT_META M  &ra RA(N) N         &ra RA(E) E  &gqt RCTRL I  &ra RA(O) O
-&ra RA(Z) Z  &ra RA(X) X   &ra RA(C) C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA    &kp DOT       &as RS(SLASH) SLASH
+&ra RA(Z) Z  &ra RA(X) X   &ra RA(C) C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA    &kp DOT       AS(SLASH)
                                         &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
             >;
         };
