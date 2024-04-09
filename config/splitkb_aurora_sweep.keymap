@@ -37,16 +37,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        ra: auto_r_alt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AUTO_R_ALT";
-            #binding-cells = <2>;
-            tapping-term-ms = <165>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
         as_ht: autoshift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
@@ -62,7 +52,6 @@
             tapping-term-ms = <200>;
             bindings = <&ralted>, <&kp>;
         };
-
     };
 
     combos {
@@ -181,7 +170,6 @@
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_1to2 &ara_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
-
     };
 
     keymap {
@@ -189,10 +177,10 @@
 
         master_1 {
             bindings = <
-&kp Q        &kp W         &kp F        &kp P              &kp B             &kp J              &ra RA(L) L         &kp U        &kp Y         &as SEMICOLON
-&ra RA(A) A  &gqt LCTRL R  &ra RA(S) S  &kp T              &gqt LEFT_META G  &gqt RIGHT_META M  &ra RA(N) N         &ra RA(E) E  &gqt RCTRL I  &ra RA(O) O
-&ra RA(Z) Z  &ra RA(X) X   &ra RA(C) C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA    &kp DOT       &as SLASH
-                                        &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
+&kp Q   &kp W         &kp F   &kp P              &kp B             &kp J              &ara L              &kp U      &kp Y         &as SEMICOLON
+&ara A  &gqt LCTRL R  &ara S  &kp T              &gqt LEFT_META G  &gqt RIGHT_META M  &ara N              &ara E     &gqt RCTRL I  &ara O
+&ara Z  &ara X        &ara C  &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &kp COMMA  &kp DOT       &as SLASH
+                              &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
             >;
         };
 
