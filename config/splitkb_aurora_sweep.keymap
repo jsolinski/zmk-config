@@ -182,11 +182,13 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&macro_param_1to1>,
-                <&macro_release>,
                 <&kp MACRO_PLACEHOLDER>;
+                <&macro_release>,
+                <&kp RALT>,
+                
 
             label = "ALTA";
         };
