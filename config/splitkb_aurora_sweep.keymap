@@ -182,7 +182,7 @@
         master_1 {
             bindings = <
 &kp Q         &kp W             &kp F             &kp P              &kp B             &kp J              &kp L               &kp U        &kp Y             &as SEMICOLON
-&gqt LCTRL A  &gqt RIGHT_ALT R  &gqt RIGHT_ALT S  &gqt RIGHT_ALT T   &gqt LEFT_META G  &gqt RIGHT_META M  &gqt RIGHT_ALT N    &gqt RALT N  &gqt RIGHT_ALT I  &gqt RIGHT_CONTROL O
+&gqt LCTRL A  &gqt RIGHT_ALT R  &gqt RIGHT_ALT S  &gqt RIGHT_ALT T   &gqt LEFT_META G  &gqt RIGHT_META M  &gqt RIGHT_ALT N    &gqt RALT E  &gqt RIGHT_ALT I  &gqt RIGHT_CONTROL O
 &kp Z         &kp X             &kp C             &gqt LEFT_SHIFT D  &gqt LEFT_ALT V   &gqt LEFT_ALT K    &gqt RIGHT_SHIFT H  &as COMMA    &as PERIOD        &as SLASH
                                                   &lt 4 ENTER        &lt 2 BACKSPACE   &lt 2 SPACE        &lt 4 DELETE
             >;
