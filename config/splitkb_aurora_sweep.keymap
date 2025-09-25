@@ -18,9 +18,9 @@
 #define     KB_FUNK      6
 
 &lt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     quick-tap-ms = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <190>;
 };
 
 &caps_word { continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>; };
