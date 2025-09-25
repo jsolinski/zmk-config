@@ -18,8 +18,9 @@
 #define     KB_FUNK      6
 
 &lt {
+    compatible = "zmk,behavior-hold-tap";
     flavor = "tap-preferred";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <150>;
     tapping-term-ms = <190>;
 };
 
