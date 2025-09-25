@@ -19,7 +19,7 @@
 
 &lt {
     compatible = "zmk,behavior-hold-tap";
-    flavor = "hold-preferred";
+    flavor = "balanced";
     tapping-term-ms = <190>;
 };
 
